@@ -1,0 +1,3 @@
+[submodule "px4-firmware"]
+	path = px4-firmware
+	url = git@github.com:PX4/Firmware.git
