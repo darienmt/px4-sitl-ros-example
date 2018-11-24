@@ -34,10 +34,10 @@ catkin_make
 
 ## Running the examples
 
-Each example will have a `launch-*.sh` script that will set up the environment variables as described [here](https://dev.px4.io/en/simulation/ros_interface.html) to run the example package and PX4. Those common variables are expressed in [launch-common.sh](https://github.com/darienmt/px4-sitl-ros-example/blob/master/launch-common.sh).
+Each example will have a `launch-*.sh` script that will set up the environment variables as described [here](https://dev.px4.io/en/simulation/ros_interface.html) to run the example package and PX4. Those common variables are expressed in [launch-common.sh](./launch-common.sh).
 
 # Examples description
 
-- **Running PX4 + Gazebo**: [`launch-px4-sitl.sh`](https://github.com/darienmt/px4-sitl-ros-example/blob/master/launch-px4-sitl.sh)
+- **Running PX4 + Gazebo**: [`launch-px4-sitl.sh`](./launch-px4-sitl.sh)
 
-- **Offboard example**: [`launch-offb.sh`](https://github.com/darienmt/px4-sitl-ros-example/blob/master/launch-offb.sh). This is the [MAVROS Offboard control example](https://dev.px4.io/en/ros/mavros_offboard.html) wrapped on a [ROS package `offb`](https://github.com/darienmt/px4-sitl-ros-example/tree/master/src/offb). The script use the launch file [`offb.launch`](https://github.com/darienmt/px4-sitl-ros-example/blob/master/src/offb/launch/offb.launch) including the [`mavros_posix_stil.launch`](https://github.com/PX4/Firmware/blob/master/launch/mavros_posix_sitl.launch).
+- **Offboard example**: [`launch-offb.sh`](./launch-offb.sh). This is the [MAVROS Offboard control example](https://dev.px4.io/en/ros/mavros_offboard.html) wrapped on a [ROS package `offb`](./src/offb). The script uses the launch file [`offb.launch`](./src/offb/launch/offb.launch) including the [`mavros_posix_stil.launch`](https://github.com/PX4/Firmware/blob/master/launch/mavros_posix_sitl.launch).
