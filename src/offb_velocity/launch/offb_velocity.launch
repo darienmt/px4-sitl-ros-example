@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find px4)/launch/mavros_posix_sitl.launch"/>
+
+    <node name="offb_velocity" pkg="offb_velocity" type="node" output="screen"/>
+</launch>
