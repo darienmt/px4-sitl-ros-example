@@ -42,4 +42,4 @@ Each example will have a `launch-*.sh` script that will set up the environment v
 
 - **Offboard example**: [`launch-offb.sh`](./launch-offb.sh). This is the [MAVROS Offboard control example](https://dev.px4.io/en/ros/mavros_offboard.html) wrapped on a [ROS package `offb`](./src/offb). The script uses the launch file [`offb.launch`](./src/offb/launch/offb.launch) including the [`mavros_posix_stil.launch`](https://github.com/PX4/Firmware/blob/master/launch/mavros_posix_sitl.launch).
 
--**Offboard velocity example**: [`launch-offb-velocity.sh`](./launch-offb-velocity.sh). Offboard control example from [Intel Aero sample apps](https://github.com/intel-aero/sample-apps/tree/master/ros/src/aero_offboard_velocity).
+-**Offboard velocity example**: [`launch-offb-velocity.sh`](./launch-offb-velocity.sh). Offboard control example from [Intel Aero sample apps](https://github.com/intel-aero/sample-apps/tree/master/ros/src/aero_offboard_velocity). [Video](https://youtu.be/4gEOPgVSwko)
