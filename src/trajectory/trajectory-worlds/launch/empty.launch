@@ -1,0 +1,13 @@
+<launch>
+   
+  <arg name="world_asset_name" value="empty"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find trajectory-worlds)/worlds/$(arg world_asset_name).world"/> 
+    <arg name="paused" value="true"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="recording" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+</launch>
