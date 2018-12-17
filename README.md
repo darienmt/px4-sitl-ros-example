@@ -9,12 +9,15 @@ The [PX4 firmware](https://github.com/PX4) is installed as [git submodule](https
 git clone --recursive <project_url>
 ```
 
+git submodule sync --recursive                                  *
+ *    and git submodule update --init --recursive 
+
 ## Making the PX4.
 
 Before running anything, you need to make the PX4 Firmware, follow the instruction [here](https://dev.px4.io/en/setup/dev_env.html) executed in the directory `/px4-firmware`. The last step of those instructions could be:
 
 ```
-make posix_sitl_default gazebo
+make px4_sitl gazebo
 ```
 And then ctl+c to turn off the execution when successfully you see the drone on Gazebo.
 
@@ -29,7 +32,7 @@ This code depends on a few packages most of them are already installed on a full
 To compile the examples use catkin:
 
 ```
-catkin_make
+catkin build
 ```
 
 ## Running the examples
