@@ -13,12 +13,8 @@
       <uri>model://trajectory_grass_plane</uri>
     </include>
     <include>
-      <name>Box1</name>
-      <uri>model://concrete_box</uri>
-    </include>
-    <include>
-      <name>Box2</name>
-      <uri>model://white_box</uri>
+      <name>Border</name>
+      <uri>model://trajectory_border</uri>
     </include>
     <physics name='default_physics' default='0' type='ode'>
       <gravity>0 0 -9.8066</gravity>
@@ -48,11 +44,20 @@
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
-    <state world_name="default">
-      <model name='Box1'>
-        <pose frame=''>10 1 0.5 0 -0 0</pose>
-        <scale>2 2 20</scale>
+    <population name="columns">
+      <model name="column">
+        <include>
+          <static>true</static>
+          <uri>model://trajectory_concrete_column</uri>
+        </include>
       </model>
-    </state>
+      <pose>0 0 0 0 0 0</pose>
+      <distribution>
+        <type>grid</type>
+        <rows>10</rows>
+        <cols>10</cols>
+        <step>10 10 0</step>
+      </distribution>
+    </population>
   </world>
 </sdf>
