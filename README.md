@@ -14,7 +14,7 @@ git clone --recursive <project_url>
 Before running anything, you need to make the PX4 Firmware, follow the instruction [here](https://dev.px4.io/en/setup/dev_env.html) executed in the directory `/px4-firmware`. The last step of those instructions could be:
 
 ```
-make posix_sitl_default gazebo
+make px4_sitl gazebo
 ```
 And then ctl+c to turn off the execution when successfully you see the drone on Gazebo.
 
