@@ -2,4 +2,4 @@
 
 source ./launch-common.sh
 
-roslaunch trajectory-worlds basic.launch
+roslaunch trajectory-main empty-iris.launch
